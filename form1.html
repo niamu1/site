@@ -1,0 +1,59 @@
+<!-- form1.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册表单</title>
+    <style>
+        table { border-collapse: collapse; }
+        td { padding: 5px; }
+        .invisible-table { border: none; }
+    </style>
+</head>
+<body>
+    <h2>用户注册</h2>
+    <form>
+        <table class="invisible-table">
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>电子邮件：</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="pwd" required></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> 男
+                    <input type="radio" name="gender" value="female"> 女
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="reading"> 阅读
+                    <input type="checkbox" name="hobby" value="sports"> 运动
+                </td>
+            </tr>
+            <tr>
+                <td>国家：</td>
+                <td>
+                    <select name="country">
+                        <option value="china">中国</option>
+                        <option value="usa">美国</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="注册">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
